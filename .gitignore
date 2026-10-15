@@ -1,0 +1,50 @@
+# ---- Secrets & local env ----
+.env
+.env.*
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Model weights (large binaries — keep out of Git) ----
+model_service/weights/**
+!model_service/weights/**/
+!model_service/weights/**/.gitkeep
+
+# ---- Runtime data & user uploads (keep out of Git) ----
+data/**
+!data/**
+!data/**/.gitkeep
+storage/**
+!storage/**
+!storage/**/.gitkeep
+
+# ---- Evaluation artifacts ----
+evaluation/reports/**
+!evaluation/reports/**
+!evaluation/reports/**/.gitkeep
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
